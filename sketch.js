@@ -1,41 +1,30 @@
-// setup runs once when you hit the play button
-// anything between the {} "happens" or "is executed"
 function setup() {
-//functionName(parameters)  can have zero parameters
-  createCanvas(400, 400); // calling a function
+  createCanvas(600, 600);
 }
 
-// draw happens continuously after setup happens
-// lines happen (are executed) in order
 function draw() {
-  // TODO 1 change the number below. Maybe several times
-  background(220)
-  // this is a comment
-  // command/control + slash to comment/uncomment
-  // TODO 2a comment out the first background "call" (above)
-  // TODO 2b uncomment the second one (below)
-  // background(220,160)
-  // TODO 3a comment out the second background call
-  // TODO 3b uncomment the third one
-  // background(220,160,120); 
-  // what is RGB?
-  // how could we pick colors we want?
-  // https://www.w3schools.com/colors/default.asp
-  rect(10,10,10,10) 
-  // why is it located where it is? 
-  // why is it the size it is?
-  // TODO 4 change the values
-  // Here is the P5 reference for shapes: 
-  // https://p5js.org/reference/#Shape
-  // TODO 5 try square
-  // TODO 6 try ellipse
-  // TODO 7 try circle
-  // TODO 8 try triangle
-  // why are the shapes white?
-  // why do they have a black border?  
-  // TODO 9 uncomment the following two lines
-  // fill(20,80,160)
-  // stroke('white')
-  // TODO 10 experiment by combining different things
-  // TODO 11 ...
+  stroke (0)
+  background(48, 194, 63);
+  fill (3, 232, 252)
+  square (17, 20, 60)
+  square (37, 80, 20)
+  rect (0, 100, 100, 120)
+  rect (15, 220, 23, 80)
+  rect (55, 220, 23, 80)
+  quad (0, 120, 20, 100, 100, 200, 80, 220)
+  quad (80, 100, 80, 220, 100, 220, 100, 100)
+  fill (0)
+  quad (95, 205, 88, 213, 131, 266, 137, 260)
+  ellipse (150, 265, 40, 20)
+  stroke (215)
+  line (173, 260, 213, 260)
+  line (173, 265, 213, 265)
+  line (173, 270, 213, 270)
+  stroke (0)
+  fill (235)
+  circle (225, 265, 18)
+  fill (255)
+  circle (300, 265, 70)
+  fill (255, 0, 0)
+  triangle (300, 125, 380, 165, 300, 265)
 }
